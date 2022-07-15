@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROYECTO WEB CERTUSS</title>
+  <!-- Libreria Estilos del Formulario -->
+	<link rel="stylesheet" href="css/estilosFormulario.css" />
+  <script src="js/form.js"></script>
+  </head>
+  <body>
+  <!-- Colocar el Nuevo Menu-->
+  <header>
+   <form action="enviar.php" method="POST" class="contact-form" onsubmit="return validar(this);"> 				
+			<div class="formulario">
+            			<div class="column">
+                        	<h2>Formulario Contacto CERTUS</h2> 
+
+                        	<label for="nombre"> Nombre <span>(requerido)</span></label>
+                            <input type="text" name="nombre" id="nombre" class="form-input"
+                            onBlur="revisar(this)">
+                            
+                            <label for="email"> Email <span>(requerido)</span></label>
+                            <input type="text" name="email" id="email" class="form-input" onBlur="revisar(this)">
+                            
+                            <label for="asunto">Mensaje <span>(requerido)</span></label>
+                          	 <textarea name="mensaje" id="mensaje" class="form-input" ></textarea>
+                         
+                			 <input   class="form-btn" type="submit" value="Enviar mensaje">
+             				 </div>  
+  </form>
+</body>
+</html>
